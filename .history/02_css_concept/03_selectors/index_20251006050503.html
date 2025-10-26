@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Universal Selector   */     
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        /* attribute */
+        [type="text"]{
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 10px 0;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors</h1>      
+    </header>
+    <main>
+        <section>
+            <h2>What are CSS Selectors?</h2>
+            <p>CSS selectors are patterns used to select and style HTML elements. They allow you to apply styles to specific elements based on their attributes, classes, IDs, or relationships with other elements.</p>
+        </section>
+
+        <section>
+            <h2>Types of CSS Selectors</h2>
+            <ul>
+                <li><strong>Element Selector:</strong> Selects all instances of a specific HTML element. Example: <code>p { color: blue; }</code></li>
+                <li><strong>Class Selector:</strong> Selects all elements with a specific class attribute. Example: <code>.my-class { font-size: 16px; }</code></li>
+                <li><strong>ID Selector:</strong> Selects a single element with a specific ID attribute. Example: <code>#my-id { background-color: yellow; }</code></li>
+                <li><strong>Attribute Selector:</strong> Selects elements based on the presence or value of an attribute. Example: <code>[type="text"] { border: 1px solid black; }</code></li>
+                <li><strong>Pseudo-class Selector:</strong> Selects elements based on their state or position. Example: <code>a:hover { text-decoration: underline; }</code></li>
+                <li><strong>Descendant Selector:</strong> Selects elements that are descendants of a specified element. Example: <code>div p { margin-bottom: 10px; }</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Combining Selectors</h2>
+            <p>You can combine multiple selectors to target more specific elements. For example:</p>
+            <ul>
+                <li><code>div.my-class { color: red; }</code> - selects all &lt;div&gt; elements with the class "my-class".</li>
+                <li><code>#my-id p { font-weight: bold; }</code> - selects all &lt;p&gt; elements inside the element with ID "my-id".</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Example Usage</h2>
+            <p>Here is an example of how CSS selectors can be used in a stylesheet:</p>
+        </section>  
+        <h2>There is a formatted code:</h2> 
+        <input type="text" placeholder="Type something...">
+        <pre>
+            int a = 0;
+            if(a==0){
+                System.out.println("Hello World");
+            }
+            else{
+                System.out.println("Hello Universe");
+            }
+        </pre> 
+</body>
+</html>

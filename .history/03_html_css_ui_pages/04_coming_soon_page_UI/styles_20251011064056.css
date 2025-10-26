@@ -1,0 +1,47 @@
+body{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(35deg, #393eca, #8c68b9);
+}
+.container{
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    text-align : center;
+}
+.logo{
+    max-width : 100%;
+    height : auto;
+    border-radius: 50%;
+    box-shadow : 0 0 30px rgba(0,0,0,0.2);
+}
+.heading{
+    font-size : 8rem;
+    margin : 20px 0;
+    color : rgb(124, 220, 235);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    width:0;
+    overflow: hidden; /* Ensures the text is hidden initially */
+    border-right: .15em solid orange;
+    white-space: nowrap; /* Creates a 'cursor' effect */
+    animation: 
+        typing 3s steps(20) forwards,  /* Reduced time and steps */
+        blink .75s steps(1) infinite;
+    animation-iteration-count: 1, 4;
+}
+@keyframes typing {
+            from { width: 0 }
+            to { width: 60%;
+                border-right-color: transparent ;  
+             }
+            }
+        
+@keyframes blink{
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+            }
+

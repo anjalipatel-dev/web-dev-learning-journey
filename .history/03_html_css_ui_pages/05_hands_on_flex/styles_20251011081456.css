@@ -1,0 +1,78 @@
+body{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height : auto;
+    width: auto;
+    display : flex;
+    box-sizing : border-box;
+    border : 2px solid black;
+    padding: 20px;
+    
+}
+.item{
+    height:50px;
+    width:50px;
+    border : 2px solid black; 
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    margin:5px;
+    font-size: 1.5rem;
+     background-color
+: lightcoral;
+}
+.item-1{
+    background-color: lightcoral;
+}
+.item-2{
+    background-color: lightblue;
+}
+.item-3{
+    background-color: lightgreen;
+}
+.item-4{
+    background-color: lightpink;
+}   
+.item-5{
+    background-color: lightgray;
+}
+.item-6{
+    background-color: lightyellow;
+}
+.flex-row{
+    flex-direction : row;
+}
+.flex-column{
+    flex-direction : column;
+}
+.container-justify{
+    justify-content : space-around;
+}
+.container-grow .item-1{
+    flex-grow : 1;
+    
+}
+.container-grow .item-2{
+    flex-grow : 2;
+    
+}
+.container-grow .item-3{
+    flex-grow : 3;
+    
+}      
+.container-grow .item-4{
+    flex-grow : 4;
+    
+}
+.container-grow .item-5{
+    flex-grow : 5;
+
+}
+.container-grow .item-6{
+    flex-grow : 6;
+
+}

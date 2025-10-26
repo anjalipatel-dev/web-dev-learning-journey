@@ -1,0 +1,51 @@
+body{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(35deg, #393eca, #8c68b9);
+}
+.container{
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    text-align : center;
+}
+.logo{
+    max-width : 100%;
+    height : auto;
+    border-radius: 50%;
+    box-shadow : 0 0 30px rgba(0,0,0,0.2);
+}
+.heading{
+    font-size : 8rem;
+    margin : 20px 0;
+    color : rgb(124, 220, 235);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: 
+    typing 4s steps(44) 1s forwards, 
+    blink .75s step-end infinite;
+}
+@keyframes typing {
+  from { 
+    /* Start with zero width (text is hidden) */
+    width: 0 
+  }
+  to { 
+    /* End at full width (text is fully visible) */
+    width: 100% 
+  }
+}
+@keyframes blink {
+  from, to { 
+    /* The right border acts as the cursor */
+    border-right-color: transparent 
+  }
+  50% { 
+    /* Makes the cursor visible halfway through the blink cycle */
+    border-right-color: orange; /* Color of the 'cursor' */
+  }
+}
+

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.navbar1{
+    background-color: rgb(212, 165, 108);
+    padding: 15px 0;
+}
+.navbar1 ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navbar1 ul li a{
+    text-decoration: none;
+    color: rgb(235, 230, 230);
+}
+.navbar1 a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(227, 60, 13);
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+    transform-origin:center;
+}
+.navbar1 a:hover::after{
+    transform: scaleX(1);
+}
+.login-btn1{
+    background-color: rgb(235, 230, 230);
+    color: rgb(212, 165, 108);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login-btn1:hover{
+    background-color: rgb(227, 60, 13);
+    color: rgb(235, 230, 230);
+    font-weight: bold;
+}
+.navbar2{
+    background-color: rgb(212, 165, 108);
+    padding: 15px 0;
+    margin-top: 10px;
+    width: 15%;
+
+}
+.navbar2 ul{
+    list-style-type: none;
+    
+    
+}
+.navbar2 ul li{
+    padding: 20px;
+}
+.navbar2 a{
+    text-decoration: none;
+    color: rgb(235, 230, 230);
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar2 a:hover{
+    background-color: rgb(218, 87, 51);
+    font-weight: bold;
+
+}
+.login-btn2{
+    background-color: rgb(235, 230, 230);
+    color: rgb(212, 165, 108);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 10px;
+
+}
+.login-btn2:hover{
+    background-color: rgb(227, 60, 13);
+    color: rgb(235, 230, 230);
+    font-weight: bold;
+}
+.navbar3{
+    background-color: rgb(212, 165, 108);
+    padding: 15px 0;
+    margin-top: 10px;
+}
+.navbar3 ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around; 
+}
+.navbar3 li{
+    padding: 20px;
+}
+.navbar3 a{
+    text-decoration: none;
+    color: rgb(235, 230, 230);
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar3 a:hover{
+    background-color: rgb(218, 87, 51);
+    font-weight: bold;
+}
+.navbar3 .dropdown-content{
+    display: none;
+}
+.navbar3 .dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(218, 87, 51);
+    position: absolute;
+    margin-top: 15px;
+}

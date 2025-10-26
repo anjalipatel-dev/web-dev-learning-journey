@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.navbar1{
+    background-color: rgb(212, 165, 108);
+    padding: 15px 0;
+}
+.navbar1 ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navbar1 ul li a{
+    text-decoration: none;
+    color: rgb(235, 230, 230);
+}
+.navbar1 ul li a:hover{
+    color: rgb(227, 60, 13);
+    font-weight: bold;
+}
+.login-btn{
+    background-color: rgb(235, 230, 230);
+    color: rgb(212, 165, 108);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
