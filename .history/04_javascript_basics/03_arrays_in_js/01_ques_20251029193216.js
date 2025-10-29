@@ -1,0 +1,12 @@
+/* declare an array named 'fruits' and initialize it with the following string values: 'apple', 'banana', 'cherry', 'date', 'elderberry'
+access the first element */
+let fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+console.log(fruits[0]);
+// access the third element
+console.log(fruits[2]);
+//using new keyword
+let vegetables = new Array('carrot', 'broccoli', 'spinach', 'potato', 'cabbage');
+// access the second element
+console.log(vegetables[1]);
+// access the last element
+console.log(vegetables[vegetables.length - 1]); 
