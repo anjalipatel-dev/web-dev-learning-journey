@@ -57,3 +57,8 @@ console.log(vegetables);
 //?sort fruits array in alphabetical order
 fruits.sort();
 console.log(fruits);
+//?find the index of 'date' in fruits array and remove it using splice method
+let dateIndex = fruits.indexOf('date');
+if (dateIndex !== -1) {
+  fruits.splice(dateIndex, 1);
+}   
