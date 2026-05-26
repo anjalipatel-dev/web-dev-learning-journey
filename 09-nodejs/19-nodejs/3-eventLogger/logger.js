@@ -1,28 +1,26 @@
-const fs = require("fs");
-const os = require("os");
+fs = require("fs");
+os = require("os");
+path = require("path");
+eventEmitter = require("events");
 
-const EventEmitter = require("events");
-
-class Logger extends EventEmitter {
+class Logger extends eventEmitter {
   log(message) {
-    this.emit("message", { message });
+    const logMessage = `${new Date().toISOString()} - ${message}`;
+    console.log(logMessage);
+    this.emit("message", logMessage);
   }
 }
 
 const logger = new Logger();
-const logFile = "./eventlog.txt";
-
+logFile = './logs.txt';
 const logToFile = (event) => {
-  const logMessage = `${new Date().toISOString()} - ${event.message} \n`;
-  fs.appendFileSync(logFile, logMessage);
+  fs.appendFile(logFile, event + os.EOL, (err) => {
+    if (err) console.error("Error writing to log file:", err);
+  });
 };
-
 logger.on("message", logToFile);
 
+let freeMemory = "The free memory is " + (os.freemem()/os.totalmem()*100).toFixed(2) + "%";
 setInterval(() => {
-  const memoryUsage = (os.freemem() / os.totalmem()) * 100;
-  logger.log(`Current memory usage: ${memoryUsage.toFixed(2)}`);
-}, 3000);
-
-logger.log("Application started");
-logger.log("Application event occurred");
+  logger.log(freeMemory);
+}, 5000);
